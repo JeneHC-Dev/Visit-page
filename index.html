@@ -8,36 +8,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flowbite JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .ibm-plex-text {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        /* font-weight: <weight>; */
+        font-style: normal;
+        /* font-variation-settings: "wdth" 100; */
+      }
+    </style>
   </head>
   <body>
     <!-- https://visitsweden.com/ -->
     <!-- Header -->
-    <div class="grid md:grid-cols-9 gap-4 bg-gray-100">
+    <div class="grid md:grid-cols-9 gap-4 bg-gray-100 font-text">
       <div class="col-start-5 col-span-4 grid md:grid-cols-5">
-        <div class="text-xs py-2 font-bold w-full text-center py-2">
-          Our other websites
+        <div
+          class="text-xs py-2 font-bold w-full text-center items-center flex py-2"
+        >
+          <span> Our other websites:</span>
         </div>
         <div>
-          <button type="button" class="w-full focus:outline-none text-xs py-2">
-            Experiencie Guide
+          <button
+            type="button"
+            class="w-full flex items-center justify-center focus:outline-none text-xs py-2"
+          >
+            <span>Experiencie Guide</span>
+            <svg class="w-6 h-6 text-gray-900 px-1">
+              <use href="#icon-send"></use>
+            </svg>
           </button>
         </div>
         <div>
-          <button type="button" class="w-full focus:outline-none text-xs py-2">
-            Corporate in México
+          <button
+            type="button"
+            class="w-full flex items-center justify-center focus:outline-none text-xs py-2"
+          >
+            <span>Corporate in México</span>
+            <svg class="w-6 h-6 text-gray-900 px-1">
+              <use href="#icon-send"></use>
+            </svg>
           </button>
         </div>
         <div>
-          <button type="button" class="w-full focus:outline-none text-xs py-2">
-            Press & Media
+          <button
+            type="button"
+            class="w-full flex items-center justify-center focus:outline-none text-xs py-2"
+          >
+            <span>Press & Media</span>
+            <svg class="w-6 h-6 text-gray-900 px-1">
+              <use href="#icon-send"></use>
+            </svg>
           </button>
         </div>
         <div>
-          <button type="button" class="w-full focus:outline-none text-xs py-2">
-            Travel trade
+          <button
+            type="button"
+            class="w-full flex items-center justify-center focus:outline-none text-xs py-2"
+          >
+            <span> Travel trade</span>
+            <svg class="w-6 h-6 text-gray-900 px-1">
+              <use href="#icon-send"></use>
+            </svg>
           </button>
         </div>
       </div>
     </div>
+
+    <script>
+      fetch("assets/icons/icons.svg")
+        .then((res) => res.text())
+        .then((data) => {
+          const div = document.createElement("div");
+          div.style.display = "none";
+          div.innerHTML = data;
+          document.body.insertBefore(div, document.body.firstChild);
+        });
+    </script>
   </body>
 </html>
