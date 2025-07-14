@@ -26,19 +26,19 @@
     </style>
   </head>
   <body>
-    <!-- https://visitsweden.com/ -->
+    <!-- https://visitMéxico.com/ -->
     <!-- Header -->
-    <div class="grid md:grid-cols-9 gap-4 bg-gray-100 font-text">
-      <div class="col-start-5 col-span-4 grid md:grid-cols-5">
+    <div class="grid md:grid-cols-9 gap-4 bg-gray-100 font-text ibm-plex-text">
+      <div class="md:col-start-5 md:col-span-4 grid md:grid-cols-5 grid-cols-2">
         <div
-          class="text-xs py-2 font-bold w-full text-center items-center flex py-2"
+          class="text-xs py-2 font-bold w-full text-center items-center flex py-2 col-span-2 md:col-span-1"
         >
-          <span> Our other websites:</span>
+          <span class="w-full"> Our other websites:</span>
         </div>
         <div>
           <button
             type="button"
-            class="w-full flex items-center justify-center focus:outline-none text-xs py-2"
+            class="w-full flex items-center justify-center focus:outline-none text-xs py-2 xs:text-center"
           >
             <span>Experiencie Guide</span>
             <svg class="w-6 h-6 text-gray-900 px-1">
@@ -82,6 +82,184 @@
       </div>
     </div>
 
+    <!-- Video section -->
+    <div class="relative w-full px-8 mt-8">
+      <video
+        src="assets/videos/landscape.mp4"
+        class="w-full md:h-[800px] xs:h-[600px] md:object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+
+      <div
+        class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0"
+      >
+        <h2
+          class="text-white md:text-5xl xs:text-3xl font-bold text-center ibm-plex-text"
+        >
+          Welcome to México
+        </h2>
+      </div>
+      <div
+        class="absolute bottom-4 right-9 bg-white text-red text-sm px-2 py-2 rounded"
+      >
+        <svg class="w-8 h-8 text-gray-900 px-1">
+          <use href="#icon-info"></use>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Discover section -->
+    <div class="grid md:grid-cols-4 mt-8">
+      <div class="md:col-start-2 md:col-span-2 p-8">
+        <h2 class="xs:text-2xl md:text-3xl font-semibold text-gray-700">
+          Discover a country where nature is always present. In our cities, in
+          our innovations and in our minds. Our nature has affected what we eat,
+          where we live and how we live. Welcome to México – a destination of a
+          different nature.
+        </h2>
+      </div>
+    </div>
+
+    <!-- Where section -->
+    <div class="grid md:grid-cols-12 gap-4 mt-8 px-3">
+      <div class="md:col-span-8 md:col-start-3 md:grid md:grid-cols-9 gap-6">
+        <!-- Where -->
+        <div class="md:col-span-3 bg-yellow-400 px-0 mt-3">
+          <div class="w-full pb-3 pt-4 px-6">
+            <h3 class="w-full border-b border-gray-400 pb-3 font-semibold">
+              Where to go
+            </h3>
+          </div>
+          <div class="w-full px-6 p-4">
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Northern México</p>
+            </div>
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Middle México</p>
+            </div>
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Southern México</p>
+            </div>
+          </div>
+          <div
+            class="w-full border-t border-gray-400 flex items-center justify-end pr-1 pt-2 pb-2"
+          >
+            <h3
+              class="font-semibold hover:bg-gray-600 hover:bg-opacity-20 hover:cursor-pointer hover:rounded px-4 py-2"
+            >
+              SHOW MORE
+            </h3>
+          </div>
+        </div>
+        <!-- What -->
+        <div class="md:col-span-3 bg-yellow-400 px-0 mt-3">
+          <div class="w-full pb-3 pt-4 px-6">
+            <h3 class="w-full border-b border-gray-400 pb-3 font-semibold">
+              What to do
+            </h3>
+          </div>
+          <div class="w-full px-6 p-4">
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Eat & Drink</p>
+            </div>
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Design & Architecture</p>
+            </div>
+            <div
+              class="flex items-center py-2 hover:font-semibold hover:cursor-pointer"
+            >
+              <svg class="w-6 h-6">
+                <use href="#arrow-right-circle"></use>
+              </svg>
+              <p class="pl-2 hover:font-semibold">Nature & Outdoors</p>
+            </div>
+          </div>
+          <div
+            class="w-full border-t border-gray-400 flex items-center justify-end pr-1 pt-2 pb-2"
+          >
+            <h3
+              class="font-semibold hover:bg-gray-600 hover:bg-opacity-20 hover:cursor-pointer hover:rounded px-4 py-2"
+            >
+              SHOW MORE
+            </h3>
+          </div>
+        </div>
+        <!-- Explore -->
+        <div class="md:col-span-3 bg-yellow-400 px-0 mt-3">
+          <div class="w-full pb-3 pt-4 px-6">
+            <div class="w-full border-b border-gray-400 flex items-center pb-3">
+              <svg class="w-6 h-6">
+                <use href="#icon-map"></use>
+              </svg>
+              <h3 class="font-semibold">Explore map</h3>
+            </div>
+          </div>
+          <div class="w-full px-6 pt-4 pb-8">
+            <div class="flex items-center py-2">
+              <p class="pl-2 pr-4 text-lg">
+                Want to plan your holiday based on your interests? Select
+                activities of choice or explore México geographically.
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-full border-t border-gray-400 flex items-center justify-end pr-1 pt-2 pb-2"
+          >
+            <h3
+              class="font-semibold hover:bg-gray-600 hover:bg-opacity-20 hover:cursor-pointer hover:rounded px-4 py-2"
+            >
+              START EXPLORING
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image Section -->
+    <div class="mt-8 px-3 grid md:grid-cols-12">
+      <div class="md:col-span-8 md:col-start-3">
+        <img
+          src="assets/img/place-mex.jpg"
+          alt="México place"
+          class="w-full h-[600px]"
+        />
+      </div>
+      <div class="md:col-span-8 md:col-start-3 bg-gray-100">
+        <h1 class="">Summer in México</h1>
+        <p>
+          The Mexican summer is not merely a season; it's a celebration of life,
+          light, and the breathtaking beauty that graces this Nordic paradise.
+        </p>
+      </div>
+    </div>
+    <div class="mt-8"></div>
     <script>
       fetch("assets/icons/icons.svg")
         .then((res) => res.text())
