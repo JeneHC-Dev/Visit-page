@@ -23,13 +23,28 @@
         font-style: normal;
         /* font-variation-settings: "wdth" 100; */
       }
+      /* Agrega esto en tu CSS global */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      #carouselContainer > div {
+        transition: transform 0.1s ease;
+      }
     </style>
   </head>
   <body>
     <!-- https://visitMéxico.com/ -->
     <!-- Header -->
-    <div class="grid md:grid-cols-9 gap-4 bg-gray-100 font-text ibm-plex-text">
-      <div class="md:col-start-5 md:col-span-4 grid md:grid-cols-5 grid-cols-2">
+    <div
+      class="grid grid-cols-1 md:grid-cols-9 gap-4 bg-gray-100 font-text ibm-plex-text"
+    >
+      <div
+        class="col-span-1 md:col-start-5 md:col-span-4 grid md:grid-cols-5 grid-cols-2"
+      >
         <div
           class="text-xs py-2 font-bold w-full text-center items-center flex py-2 col-span-2 md:col-span-1"
         >
@@ -271,7 +286,155 @@
         </button>
       </div>
     </div>
+
+    <!-- Carousel section -->
+    <div class="w-full px-1 mt-12">
+      <div class="relative w-[65%] mx-auto">
+        <!-- Botón izquierdo -->
+        <button
+          id="scrollLeft"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full shadow p-2"
+        >
+          ←
+        </button>
+
+        <!-- Contenedor de tarjetas -->
+        <div
+          id="carouselContainer"
+          class="flex overflow-x-auto scroll-smooth gap-4 px-8 py-4 no-scrollbar"
+        >
+          <!-- Tarjeta 1-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow hover:cursor-pointer hover:bg-gray-200"
+          >
+            <img
+              src="assets/img/place-1.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Playas de aguas turquesa y ruinas mayas frente al mar Caribe.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 2-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-2.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Cascadas petrificadas y albercas naturales con vistas al
+                infinito.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 3-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-3.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Callejones iluminados, leyendas y serenatas que te robarán el
+                corazón.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 4-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-4.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Un abismo gigante donde el río Grijalva es el protagonista.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 5-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-5.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Arena blanca, aguas bioluminiscentes y el mejor lugar para nadar
+                con tiburón ballena.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 6-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-6.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Un pueblo fantasma lleno de historia, arte y paisajes desérticos
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 7-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-7.jpg"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Un jardín surrealista escondido en la selva huasteca.
+              </p>
+            </div>
+          </div>
+          <!-- Tarjeta 8-->
+          <div
+            class="flex-shrink-0 w-[90%] sm:w-[60%] md:w-[45%] lg:w-[28%] bg-gray-100 shadow"
+          >
+            <img
+              src="assets/img/place-8.jpg
+              "
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-4">
+              <p class="text-lg text-gray-600">
+                Calles empedradas, plata reluciente y una de las iglesias más
+                fotogénicas de México.
+              </p>
+            </div>
+          </div>
+          <!-- Repite las tarjetas según lo necesites -->
+        </div>
+
+        <!-- Botón derecho -->
+        <button
+          id="scrollRight"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full shadow p-2"
+        >
+          →
+        </button>
+      </div>
+    </div>
+
     <div class="mt-8"></div>
+    <!-- Scripts -->
     <script>
       fetch("assets/icons/icons.svg")
         .then((res) => res.text())
@@ -281,6 +444,29 @@
           div.innerHTML = data;
           document.body.insertBefore(div, document.body.firstChild);
         });
+    </script>
+    <script>
+      const container = document.getElementById("carouselContainer");
+
+      function getCardWidth() {
+        // Selecciona la primera tarjeta
+        const firstCard = container.querySelector("div");
+        const cardStyles = window.getComputedStyle(firstCard);
+
+        const marginRight = parseFloat(cardStyles.marginRight || 0);
+        const marginLeft = parseFloat(cardStyles.marginLeft || 0);
+
+        // Retorna el ancho total: tarjeta + margen derecho + izquierdo
+        return firstCard.offsetWidth + marginRight + marginLeft;
+      }
+
+      document.getElementById("scrollLeft").addEventListener("click", () => {
+        container.scrollBy({ left: -getCardWidth(), behavior: "smooth" });
+      });
+
+      document.getElementById("scrollRight").addEventListener("click", () => {
+        container.scrollBy({ left: getCardWidth(), behavior: "smooth" });
+      });
     </script>
   </body>
 </html>
