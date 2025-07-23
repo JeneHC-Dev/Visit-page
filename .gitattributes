@@ -1,1 +1,2 @@
 assets/videos/landscape.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
